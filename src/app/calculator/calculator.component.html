@@ -1,0 +1,42 @@
+<!-- <input type="number" name="num1" [(ngModel)]="num1">
+<input type="number" name="num2" [(ngModel)]="num2">
+<br>
+<br>
+<button (click)="add()">Add</button>
+<button (click)="sub()">Sub</button>
+<button (click)="mul()">Mul</button>
+<button (click)="div()">Div</button>
+<br>
+<h3>Result: {{num3}}</h3>
+	 -->
+
+
+<div class="calculator">
+  <input type="text" class="display-screen" value="0" [value]="currentnumber" disabled>
+  <div class="input-keys">
+
+    <button class="operator" (click)="getOperation('+')" value="+">+</button>
+    <button class="operator" (click)="getOperation('-')" value="-">-</button>
+    <button class="operator" (click)="getOperation('*')" value="*">&times;</button>
+    <button class="operator" (click)="getOperation('/')" value="/">&divide;</button>
+    
+    <button value="7" (click)="getNumber('7')">7</button>
+    <button value="8" (click)="getNumber('8')">8</button>
+    <button value="9" (click)="getNumber('9')">9</button>
+
+    <button value="4" (click)="getNumber('4')">4</button>
+    <button value="5" (click)="getNumber('5')">5</button>
+    <button value="6" (click)="getNumber('6')">6</button>
+
+    <button value="1" (click)="getNumber('1')">1</button>
+    <button value="2" (click)="getNumber('2')">2</button>
+    <button value="3" (click)="getNumber('3')">3</button>
+
+    <button value="0" (click)="getNumber('0')">0</button>
+    <button class="decimal" (click)="getDecimal()" value=".">.</button>
+    <button class="all-clear" (click)="clear()" value="all-clear">AC</button>
+
+    <button class="equal-to" (click)="getOperation('=')" value="=">=</button>
+
+  </div>
+</div>
